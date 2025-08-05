@@ -15,8 +15,12 @@ getBudgets([
 ]) ➞ 62600
 */
 
-function getBudgets( /*args*/ ) {
-  //your code
+function getBudgets( budgets ) {
+  let sum=0;
+  for (let person of budgets){
+    sum += person.budget;
+  }
+   return sum; 
 }
 
 exports.solution = getBudgets;
